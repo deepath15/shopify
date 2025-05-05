@@ -54,7 +54,7 @@ console.log("pathName is here :",pathname);
           </motion.div>
         )}
       </AnimatePresence>
-      <div className="min-h-screen flex items-center justify-center bg-gray-100 p-6">
+      <div className="min-h-screen flex items-center flex-col justify-center bg-gray-100 p-6  gap-10 ">
         <div className="max-w-md w-full space-y-8">
           <div>
             <Image className="mx-auto h-[100px] w-auto" src={'/asserts/logo/logo.svg'} height={100} width={100} alt="Logo" />
@@ -133,6 +133,10 @@ console.log("pathName is here :",pathname);
               }
             </button>
           </form>
+        </div>
+        <div>
+          <p>username : deepath</p>
+          <p>password : Pa$$w0rd!</p>
         </div>
       </div>
     </>
