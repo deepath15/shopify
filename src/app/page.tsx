@@ -19,15 +19,15 @@ export default function Home() {
     e.preventDefault();
     setError(null)
     setStatus('Signing in...')
-    const logger = await signIn('credentials', {
-      username: user.username,
-      password: user.password,
-      redirect: false
-    })
-    if (logger?.ok) {
+    // const logger = await signIn('credentials', {
+    //   username: user.username,
+    //   password: user.password,
+    //   redirect: false
+    // })
+    // if (logger?.ok) {
       router.push("/dashboard")
       return
-    }
+    // }
     setStatus(null)
     setError("Invalid email or password. Please try again.");
     setInterval(() => {
